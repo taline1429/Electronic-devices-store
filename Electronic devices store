@@ -1,0 +1,62 @@
+print('Welcome to the electronic appliances store ')
+print('1-| pc')
+print('2-| Phone')
+print('3-| Laptop')
+print('4-| printer')
+print('5-| Tablet device ;; unavailable at the moment')
+o = input()
+g = 'pc'
+h = 'phone'
+m = 'laptop'
+p = 'printer'
+f = 'tablet device'
+if o == g:
+    print('Choose the color you want')
+    print('read , black , white ')
+c = input()
+r = 'read'
+b = 'black'
+w = 'white'
+d = 'dark gray'
+if c == r:
+    print('1- Red computer = $3999 ')
+if c == b:
+    print('1- black computer = $3999 ')
+if c == w:
+    print('1- white computer = $3999 ')
+if o == h:
+    print('Choose the color you want')
+    print('read , black , white , Dark gray ')
+c = input()
+if c == r:
+    print(' read phone = $2999')
+if c == b:
+    print('black phone = $2999')
+if c == w:
+    print('white phone = $2999')
+if c == d:
+    print('dark gray phone = $2999')
+if o == m:
+    print('Choose the color you want')
+    print('read , black , white , Dark gray ')
+C = input()
+if C == r:
+    print('1- read laptop = $4999')
+if C == b:
+    print('1- black laptop = $4999')
+if C == w:
+    print('1- white laptop = $4999')
+if C == d:
+    print('1- dark gray laptop = $4999')
+if o == p:
+    print('Choose the color you want')
+    print('read , black , white , Dark gray ')
+c = input()
+if c == r:
+    print('1- read printer = $999')
+if c == b:
+    print('1- black printer = $999')
+if c == w:
+    print('1- white printer = $999')
+if c == d:
+    print(' 1- dark gray printer = $999')
