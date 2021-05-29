@@ -1,0 +1,126 @@
+# tkinter #
+from tkinter import *
+w = Tk()
+w.geometry('600x600')
+w.title("Electronic Devices Store")
+w.minsize(600, 600)
+w.configure(bg='#4A7491')
+
+
+##################################
+# labels #
+
+def pc():
+    if txt.get().strip().lower() in ('PC', 'Pc', 'pC', 'pc'):
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$4599', font=('normal', 16, 'bold'))
+        e.pack(fill='both', expand='true')
+        e.place(x=260, y=65)
+    if txt.get().strip().lower() in ('PHONE', 'phone', 'Phone'):
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$2999', font=('normal', 16, 'bold'))
+        e.pack(fill='both', expand='true')
+        e.place(x=260, y=65)
+    if txt.get().strip().lower() in ('laptop', 'Laptop', 'LAPTOP'):
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$3599', font=('normal', 16, 'bold'))
+        e.pack(fill='both', expand='true')
+        e.place(x=260, y=65)
+    if txt.get().strip().lower() in ('printer', 'PRINTER', 'Printer'):
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$1499', font=('normal', 16, 'bold'))
+        e.pack(fill='both', expand='true')
+        e.place(x=260, y=65)
+
+
+bt = Label(w,
+           bg='#4A7491',
+           text='1- PC',
+           width=0,
+           bd=0,
+           fg='black',
+           font=('normal', 20, 'bold'),
+           relief=FLAT,
+
+
+           )
+bt.pack(fill='both', expand='true')
+bt.place(x=30, y=99)
+
+bt1 = Label(w,
+            bg='#4A7491',
+            text='2- Phone',
+            width=0,
+            bd=0,
+            fg='black',
+            font=('normal', 20, 'bold'),
+            relief=FLAT,
+
+
+            )
+bt1.pack(fill='both', expand='true')
+bt1.place(x=30, y=199)
+
+bt2 = Label(w,
+            bg='#4A7491',
+            text='3- Laptop',
+            width=0,
+            bd=0,
+            fg='black',
+            font=('normal', 20, 'bold'),
+            relief=FLAT,
+
+            )
+bt2.pack(fill='both', expand='true')
+bt2.place(x=30, y=299)
+
+bt3 = Label(w,
+            bg='#4A7491',
+            text='4- printer',
+            width=0,
+            bd=0,
+            fg='black',
+            font=('normal', 20, 'bold'),
+            relief=FLAT,
+
+            )
+bt3.pack(fill='both', expand='true')
+bt3.place(x=30, y=399)
+
+btn10 = Button(w,
+               bg='white',
+               text='restart',
+               width=0,
+               bd=1,
+               fg='black',
+               font=('normal', 16, 'bold'),
+               relief=FLAT,
+               command=pc
+               )
+btn10.place(x=310, y=150)
+##################################
+fnt = Label(w, bg='#4A7491',
+            text='the account is:',
+            width=0,
+            bd=0,
+            fg='black',
+            font=('normal', 20, 'bold'),
+            relief=FLAT
+            )
+fnt.pack()
+bt9 = Label(w,
+            bg='#4A7491',
+            text='Enter the name of the device\n you want to buy and enter\nrestart',
+            width=0,
+            bd=0,
+            fg='blue',
+            font=('normal', 16, 'normal'),
+            relief=FLAT,
+
+            )
+bt9.pack(fill='both', expand='true')
+bt9.place(x=220, y=210)
+
+lbl = Label(w)
+fnt = ('times', 20, 'bold')
+txt = Entry(w)
+txt.config(font=fnt)
+txt.place(x=220, y=300)
+
+w.mainloop()
