@@ -12,19 +12,19 @@ w.configure(bg='#4A7491')
 
 def pc():
     if txt.get().strip().lower() in ('PC', 'Pc', 'pC', 'pc'):
-        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$4599', font=('normal', 16, 'bold'))
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$1000', font=('normal', 16, 'bold'))
         e.pack(fill='both', expand='true')
         e.place(x=260, y=65)
     if txt.get().strip().lower() in ('PHONE', 'phone', 'Phone'):
-        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$2999', font=('normal', 16, 'bold'))
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$980', font=('normal', 16, 'bold'))
         e.pack(fill='both', expand='true')
         e.place(x=260, y=65)
     if txt.get().strip().lower() in ('laptop', 'Laptop', 'LAPTOP'):
-        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$3599', font=('normal', 16, 'bold'))
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$1100', font=('normal', 16, 'bold'))
         e.pack(fill='both', expand='true')
         e.place(x=260, y=65)
     if txt.get().strip().lower() in ('printer', 'PRINTER', 'Printer'):
-        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$1499', font=('normal', 16, 'bold'))
+        e = Label(bg='#4A7491', width=0, bd=0, fg='blue', text='$200', font=('normal', 16, 'bold'))
         e.pack(fill='both', expand='true')
         e.place(x=260, y=65)
 
